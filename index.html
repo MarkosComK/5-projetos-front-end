@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="header">
+        <div class="empty"></div>
+        <header>1º Projeto usando HTML e CSS</header>
+        <a href="pagina2/2proj.html">próximo</a>
+    </div>
+    <div class="cabeçalho">
+        <h1>Formulário De Preenchimento</h1>
+        <p><em>Preencha o formulário abaixo com os seus dados</em></p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" nome="email" id="email" placeholder="Digite seu E-mail" required>
+            </div>
+
+            <div class="campo">
+                <label for="idade"><strong>Idade</strong></label>
+                <input type="number" name="idade" id="idade" min="10" placeholder="Selecione sua idade" required>
+            </div>
+
+            <div class="campo">
+                <label for="situacao"><strong>Que opção melhor descreve sua atual situação</strong></label>
+                <select name="situacao" id="situacao" required>
+                    <option selected disabled>Selecione</option>
+                    <option value="estudanteparcial">Estudante</option>
+                    <option value="trabalhointegral">Trabalho em tempo integral</option>
+                    <option value="estudanteintegral">Estudante em tempo integral</option>
+                    <option value="prefironaodizer">Prefiro não dizer</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="campo" id="radiobuttons">
+                <label><strong>Você gostaria de estudar programação?</strong></label>
+                <label>
+                    <input type="radio" name="dev" id="radio" value="sim" checked>Sim
+                </label>
+                <label>
+                    <input type="radio" name="dev" id="radio" value="nao">Não
+                </label>
+                <label>       
+                    <input type="radio" name="dev" id="radio" value="talvez">Talvez
+                </label>
+            </div>
+            <div class="campo" id="checkboxes">
+                <ul>
+                    <label><strong>Qua linguagem você gostaria de estudar?</strong></label>
+                    <li>
+                        <input type="checkbox" name="python" id="python">
+                        <label for="python">Python</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="javascript" id="javascript">
+                        <label for="javascript">JavaScript</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="c" id="c">
+                        <label for="c">C</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="c++" id="c++">
+                        <label for="c++">C++</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="c#" id="c#">
+                        <label for="c#">C#</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="php" id="php">
+                        <label for="php">PHP</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="campo">
+                <label for="textarea"><strong>Me fale um pouco sobre você</strong></label>
+                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Escreva aqui"></textarea>
+            </div>
+
+            <button type="submit" class="button" >concluido</button>
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
