@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #333;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 0.9em;
+}
+
+#apresentation{
+    min-height: 60vh;
+    border: 1px solid #333;
+}
+
+#apresentation h1 {
+    font-size: 2.5em;
+    padding: 90px 0px 0px;
+}
+
+#apresentation .content-wrap{
+    padding: 0em 2em;
+}
+
+.headerbg {
+    position: absolute;
+    background-image: url(../img/code.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    height: 60vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.button{
+    position: relative;
+    top: 4em;
+    padding: 25px 40px;
+    text-decoration: none;
+    color: #FFF;
+    border: 1px solid #666;
+}
+
+.button:hover{
+    background: #fff;
+    color: #666;
+}
+
+/*First Section*/
+
+#section1 {
+    background: #eaeaea;
+    color: #333;
+    border: 1px solid #eaeaea;
+    padding: 1.5em;
+}
+
+/*---------*/
+
+/*Cards Section*/
+
+#cardimg {
+    display: block;
+    width: 100%;
+}
+
+ul{
+    padding: 0;
+}
+
+section ul li{
+    list-style: none;
+    color: #333;
+}
+
+.card{
+    margin: 0px 15px;
+    background: #eaeaea;
+    margin-top: 20px;
+    height: 90%;
+}
+
+.cardcontent {
+    padding: 50px 20px ;
+}
+
+/*Section Three*/
+
+#sec-three{
+    padding: 50px 70px;
+    color: #333;
+    background: #eaeaea;
+}
+
+/*Section Four*/
+
+#sec-four .contact{
+    border: 1px solid #2690d4;
+    margin: 0;
+    padding: 50px 70px;
+    background: #2690D4;
+}
+.contactus{
+    background: #2690d4;
+}
+
+#sec-four .about{
+    border: 1px solid #333;
+    margin: 0;
+    padding: 50px 70px;
+    background: #333;
+}
+
+/*Section five*/
+
+#sec-five{
+    border: 1px solid #000;
+    background: #000;
+}
+
+#sec-five a{
+    text-decoration: none;
+    color: #2690d4;
+}
+
+
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
+    }
+    .content-wrap{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    #sec-four{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .content1{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
